@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container" id="actor-list"></div>
+
+    <script>
+      fetch("https://api.themoviedb.org/3/person/popular?language=en-US&page=1", {
+            headers: {
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZTU5NzY0OTIyMGVmMjU2ZWI3YTNlNDAzNmM5N2QwZCIsIm5iZiI6MTYyNjA3ODM3MC4wNzUsInN1YiI6IjYwZWJmY2EyOTgyNGM4MDA1ZmYzZTdiNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zHDTNuMcM_YJLRGw_TlCu5LCJXqKmxtQ4Jy-AS1Wov4" // Replace with your actual API token
+            }
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            data.results.forEach((person) => {
+                const personHTML = `
+                    <div class="actor-card">
+                        <img src="https://image.tmdb.org/t/p/w500${person.profile_path}" alt="${person.name}">
+                        <h3>${person.name}</h3>
+                        <p>Known for: ${person.known_for_department}</p>
+                    </div>
+                `;
+                $("#actor-list").append(personHTML);
+            });
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+    </script>
+  </body>
+</html>
