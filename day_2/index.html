@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-left">
+        <div class="logo">C2411L</div>
+        <div class="nav-content">
+          <ul class="nav-list">
+            <li class="nav-item">Products</li>
+            <li class="nav-item">Features</li>
+            <li class="nav-item">Pricing</li>
+            <li class="nav-item">Support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="sign_in">Sign in</div>
+        <div class="btn">Start free trial</div>
+      </div>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+
+      <script>
+        $(document).ready(function () {
+          $(".hamburger").click(function () {
+            $(".nav-content").toggleClass("show");
+          });
+          $(".nav-content").click(function () {
+            $(".nav-content").removeClass("show");
+          });
+        });
+    //     const sr = ScrollReveal({
+    //     origin: "top",
+    //     distance: "30px",
+    //     duration: 2000,
+    //     reset: true,
+    //   });
+
+    //   sr.reveal(
+    //     `   .nav-left, 
+    //         .nav-right,
+    //         .banner, .product-list,
+    //         .footer`,
+    //     {
+    //       interval: 200,
+    //     }
+    //   );
+      </script>
+    </header>
+    <div class="banner">
+      <div class="banner-content">
+        <h1 class="header-content">
+          A Special Credit <br />
+          Card Made For <br />
+          Developers.
+        </h1>
+        <p class="note-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+          Vehicula massa in enim lucuts. Rutrum arcu
+        </p>
+        <div class="email-btn">
+          <input
+            class="email-input"
+            type="text"
+            placeholder="Your Email Address"
+          />
+          <button class="email-button">Get FreeCard</button>
+        </div>
+        <div class="infor">
+          <div class="infor-content">
+            <div class="number">2943</div>
+            <div class="text">
+              Card <br />
+              Delivered
+            </div>
+          </div>
+          <div class="infor-content">
+            <div class="number">$1M+</div>
+            <div class="text">
+              Card <br />
+              Delivered
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-img">
+        <img
+          src="./z6441539232970_9387b20b50492c78055429252519d738.jpg"
+          alt="banner"
+        />
+      </div>
+    </div>
+    <div class="product-list">
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+      <div class="product">
+        <img
+          src="./z6441539145468_5ef3b87eeaf2afcb9a2380227b698532.jpg"
+          alt=""
+        />
+        <p>DIJ Phantom 2 Vision+</p>
+        <h3>$5999</h3>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>Platform</h3>
+        <ul>
+          <li>Studio</li>
+          <li>Closet</li>
+          <li>Discover</li>
+          <li>Market</li>
+          <li>FAQ</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+      <div class="contact-section">
+        <h3>Ready for action</h3>
+        <a href="mailto:hello@defy.io">hello@defy.io</a>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
