@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+    .table-container {
+        padding: 0 8px;
+    }
+
+    .billing-table th, .billing-table td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-right button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .nav-content a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .search input {
+        width: 60%;
+    }
+
+    .search button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .billing-table th, .billing-table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        padding: 0 5px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .nav-content {
+        flex-wrap: wrap;
+    }
+
+    .nav-content a {
+        margin: 5px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .billing-table {
+        overflow-x: auto;
+    }
+
+    .billing-table table {
+        min-width: 500px;
+    }
+
+    .billing-table th, .billing-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .pay-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .status {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
